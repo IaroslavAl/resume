@@ -2,87 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>iOS Developer</title>
+    <title>Beldin Iaroslav - iOS Developer</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img
-            src="https://i.ibb.co/KK1B43Y/11zon-cropped.png"
-            width="200"
-            alt="profile_photo"
-          />
-        </td>
-        <td>
+    <div class="card">
+      <div class="header">
+        <img
+          src="https://i.ibb.co/KK1B43Y/11zon-cropped-small.png"
+          alt="profile_photo"
+          s
+        />
+        <div>
           <h1>Beldin Iaroslav</h1>
           <p>iOS Developer</p>
-          <p><em>some info</em></p>
-          <p><strong>some info</strong></p>
-        </td>
-      </tr>
-    </table>
+          <p>some info</p>
+          <p>some info</p>
+        </div>
+      </div>
+    </div>
 
-    <hr />
+    <div class="card">
+      <h2>Social media</h2>
+      <a href="https://github.com/IaroslavAl" target="_blank">GitHub</a>
+      |
+      <a href="https://t.me/iaroslav_beldin" target="_blank">Telegram</a>
+    </div>
 
-    <h2>Social media</h2>
-    <ul>
-      <li><a href="https://github.com/IaroslavAl" target="_blank">Git</a></li>
-      <li>
-        <a href="https://t.me/iaroslav_beldin" target="_blank">Telegram</a>
-      </li>
-    </ul>
+    <div class="card">
+      <h2>Experience</h2>
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Position</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>Raiffaisen Bank</td>
+          <td>Middle iOS Developer</td>
+          <td>Sep 2024 - now</td>
+        </tr>
+        <tr>
+          <td>Raiffaisen Bank</td>
+          <td>Junior iOS Developer</td>
+          <td>Jan 2024 - Aug 2024</td>
+        </tr>
+        <tr>
+          <td>Raiffaisen Bank</td>
+          <td>Trainee iOS Developer</td>
+          <td>Jul 2023 - Dec 2023</td>
+        </tr>
+      </table>
+    </div>
 
-    <hr />
-
-    <h2>Experience</h2>
-    <table cellspacing="10">
-      <tr>
-        <th>Company</th>
-        <th>Position</th>
-        <th>Experience</th>
-      </tr>
-
-      <tr>
-        <td>Raiffaisen Bank</td>
-        <td>Middle iOS Developer</td>
-        <td>09.2024 - now</td>
-      </tr>
-
-      <tr>
-        <td>Raiffaisen Bank</td>
-        <td>Junior iOS Developer</td>
-        <td>01.2024 - 08.2024</td>
-      </tr>
-
-      <tr>
-        <td>Raiffaisen Bank</td>
-        <td>Trainee iOS Developer</td>
-        <td>07.2023 - 12.2023</td>
-      </tr>
-    </table>
-
-    <hr />
-
-    <h2>Contact</h2>
-    <form action="/">
-      <label for="name">Your name:</label>
-      <input type="text" id="name" placeholder="Type your name..." />
-
-      <br />
-
-      <label for="email">Your email:</label>
-      <input type="email" id="email" placeholder="Type your email..." />
-
-      <br />
-
-      <label for="text">Your message:</label>
-      <br />
-      <textarea name="text" id="text"></textarea>
-
-      <br />
-
-      <input type="submit" value="Contact!" />
-    </form>
+    <div class="contact">
+      <h2>Contact</h2>
+      <form action="https://example.com/submit-form">
+        <div class="row">
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" placeholder="Type your name..." />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" placeholder="Type your email..." />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="text">Your message:</label>
+          <textarea id="text" rows="1"></textarea>
+        </div>
+        <input class="button" type="submit" value="Contact!" />
+      </form>
+    </div>
   </body>
 </html>
